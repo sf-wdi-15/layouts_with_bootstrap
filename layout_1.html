@@ -2,17 +2,31 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+      .box {
+        border: dashed 1px black;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar navbar-inverse">
     </div>
-    <div class="container">
+    <div class="container box">
       <div class="row">
-        <div class="col-xs-3">
-          SIDE CONTENT OVER HERE
+        <div class="col-xs-3 box">
+          Left content
         </div>
-        <div class="col-xs-9">
-          RIGHT CONTENT OVER HERE
+        <div class="col-xs-9 box">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 box">
+              <h1 class="page-header">HEADING</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 box">
+              SUBCONTENT
+            </div>
+          </div>
         </div>
       </div>
     </div>
